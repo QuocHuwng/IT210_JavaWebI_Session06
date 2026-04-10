@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:replace="layout/header :: header(${title})"></div>
+
+<p>ID: <span th:text="${book.id}"></span></p>
+<p>Tên: <span th:text="${book.name}"></span></p>
+<p>Tác giả: <span th:text="${book.author}"></span></p>
+<p>Giá: <span th:text="${book.price}"></span></p>
+
+<a th:href="@{/books}">Quay lại</a>
+
+<div th:replace="layout/footer :: footer"></div>
+
+</body>
+</html>
